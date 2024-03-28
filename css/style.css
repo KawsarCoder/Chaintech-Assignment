@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+header {
+  background: #060606;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(12, 2fr);
+  height: 100px;
+  align-items: center;
+  border-bottom: 1px solid #1f1f1f;
+}
+
+.logo-Wrapper {
+  width: 165px;
+  height: 50px;
+}
+
+.navbar-items {
+  grid-column-start: 5;
+  grid-column-end: 13;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+
+.active {
+  color: #00ffa7;
+}
+
+.topBanner {
+  color: white;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+}
+
+.topBanner h1 {
+  font-size: 120px;
+  line-height: 130px;
+  padding-top: 100px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.topBanner p {
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 24px;
+  width: 70%;
+}
+
+.top-name {
+  background-image: linear-gradient(to left, #00ffa7, #ffff00);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.topBanner button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 50px;
+  margin-bottom: 112px;
+  border: 2px solid #000000;
+}
+
+.btn-wrap {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
+  border-radius: 100%;
+}
