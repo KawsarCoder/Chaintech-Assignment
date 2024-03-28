@@ -23,7 +23,7 @@ header {
 /* navbar style  */
 nav {
   display: grid;
-  grid-template-columns: repeat(12, 2fr);
+  grid-template-columns: repeat(12, 1fr);
   height: 100px;
   align-items: center;
   border-bottom: 1px solid #1f1f1f;
@@ -138,10 +138,12 @@ button:hover .btn-arrow-wrap {
   background: linear-gradient(to left, #00ffa7, #ffff00);
 }
 
+/* main layout style  */
 .main-layout-wrapper {
   margin: 0 auto;
 }
 
+/* services items style  */
 .services-offer {
   display: flex;
   justify-content: space-around;
@@ -185,6 +187,7 @@ button:hover .btn-arrow-wrap {
   border-radius: 100%;
 }
 
+/* service card style  */
 .services-card {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -261,6 +264,7 @@ button:hover .btn-arrow-wrap {
   background: linear-gradient(to left, #00ffa7, #ffff00);
 }
 
+/* footer style  */
 footer {
   background-color: #000000;
   color: white;
@@ -283,4 +287,113 @@ footer {
   font-size: 14px;
   font-weight: 500;
   color: #98a6ac;
+}
+
+/* responsive mobile screen  */
+@media screen and (max-width: 640px) and (min-width: 320px) {
+  header {
+    padding: 40px 0;
+  }
+
+  nav {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+
+  .navbar-items {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    grid-column-start: 1;
+    grid-column-end: 13;
+  }
+
+  .services-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .topBanner h1 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    margin-top: 50px;
+  }
+
+  .topBanner p {
+    font-size: 14px;
+    font-weight: 400;
+    width: 90%;
+  }
+  .topBanner button {
+    font-size: 18px;
+    width: 180px;
+    height: 50px;
+  }
+
+  .services-offer {
+    display: block;
+    text-align: center;
+  }
+
+  .services-top-info h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .services-top-info p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
+
+/* responsive tab screen  */
+@media screen and (max-width: 1080px) {
+  header {
+    padding: 40px 0;
+  }
+
+  nav {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+
+  .navbar-items {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    grid-column-start: 1;
+    grid-column-end: 13;
+  }
+
+  .topBanner h1 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    margin-top: 50px;
+  }
+
+  .topBanner p {
+    font-size: 14px;
+    font-weight: 400;
+    width: 50%;
+  }
+
+  .services-offer {
+    display: block;
+    text-align: center;
+  }
+
+  .services-top-info h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .services-top-info p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .services-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
