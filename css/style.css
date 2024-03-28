@@ -96,6 +96,10 @@ nav {
   margin-bottom: 112px;
 }
 
+.topBanner button:hover {
+  border: 2px solid #00ffa7;
+}
+
 .top-name {
   background-image: linear-gradient(to left, #00ffa7, #ffff00);
   background-clip: text;
@@ -109,12 +113,13 @@ button {
   align-items: center;
   gap: 10px;
   border-radius: 50px;
+  background: white;
   border: 2px solid #000000;
 }
 
 button:hover {
   background: #000;
-  border: 2px solid #00ffa7;
+
   color: white;
 }
 
@@ -178,4 +183,104 @@ button:hover .btn-arrow-wrap {
   width: 48px;
   height: 48px;
   border-radius: 100%;
+}
+
+.services-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.single-card {
+  background-color: #dfffed;
+  border-radius: 20px;
+  border: 3px solid black;
+}
+
+.joining-logo {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
+  border-radius: 100%;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px 12px 20px;
+  gap: 10px;
+  border-bottom: 3px solid #000000;
+}
+
+.card-title span {
+  font-weight: 15px;
+  font-weight: 600;
+}
+
+.service-details h5 {
+  font-size: 23px;
+  text-align: center;
+  margin-top: 44px;
+  margin-bottom: 20px;
+}
+
+.service-img {
+  display: grid;
+  justify-content: center;
+  border-bottom: 3px solid #000000;
+}
+
+.service-img img {
+  margin-bottom: -11px;
+  height: 156px;
+}
+
+.service-btn-wrapper {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.service-btn-wrapper button {
+  width: 118px;
+  height: 38px;
+  margin: 14px 20px 14px 0;
+  padding-left: 6px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.service-arrow {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background: linear-gradient(to left, #00ffa7, #ffff00);
+}
+
+footer {
+  background-color: #000000;
+  color: white;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  padding: 50px;
+  margin-top: 64px;
+}
+
+.footer-container span {
+  border-top: 1px solid #5e5e5e;
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+  padding-top: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #98a6ac;
 }
